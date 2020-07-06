@@ -72,33 +72,6 @@
 ###############################################################################
 
 
-###############################################################################
-#				ARRAY OF FILE NAMES
-# Put all the hidden folders into an array, see if the junk folder exists
-# if it doesn't, make it in the home directory
-
-#declare -a filenames
-
-# Instead of appending parameter filenames into array, use grep to extract the
-# hidden file names of the current directory.
-
-# If the hidden directory ./junk does not exists, then create it
-
-# 	Command -->		egrep "^\..*/$" 
-
-# shift "$((OPTIND-1))"
-# index=0
-# for f in $@; do
-# 	filenames[$index]="$f"
-# 	(( ++index ))
-# done
-
-# Make a for loop that checks if the ./junk is there
-# if[]
-
-#echo ${filenames[*]} 
-###############################################################################
-
 readonly destination="/home/cs392/.junk"
 
 # NO ENTRY CASE
